@@ -1,0 +1,75 @@
+@font-face{
+  font-family: roboto;
+  src: url(./fonts/Roboto-Regular.ttf)
+}
+
+
+*{
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+  font-family: roboto;
+}
+
+nav{
+  background-color: #555;
+  position: sticky; 
+  top: 0;
+}
+
+ul{
+  list-style-type: none;
+}
+
+li{
+  display: inline-block;
+}
+
+li a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
+
+li a:hover:not(.active){
+  background-color: #111;
+}
+ 
+
+ul.dropdown-menu{
+  display: none;
+  position: absolute;
+  background-color: #555;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-li:hover .dropdown-menu {
+  display: block;
+}
+
+
+
+
+ul.dropdown-menu li{
+  display: block;
+  
+}
+
+ul.dropdown-menu li a{
+  display: block;
+}
+
+
+.active{
+  background-color: rgb(44, 112, 238);
+}
+
+p{
+  margin-top: 1em;
+}
+
+
+ 
